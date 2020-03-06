@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0A0C2C68-89AB-4583-811B-E485F038C48A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>PageWriter.My.MyApplication</StartupObject>
+    <RootNamespace>PageWriter</RootNamespace>
+    <AssemblyName>Byoo PageWriter</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <HockeyAppResourceId>b5ce22ea83bd4c0cb71219ea69a2edc3</HockeyAppResourceId>
+    <PublishUrl>C:\Users\Reuben\Export\Byoo PageWriter\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Background</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>http://localhost/Byoo PageWriter/</UpdateUrl>
+    <TargetCulture>en-GB</TargetCulture>
+    <ProductName>PageWriter</ProductName>
+    <PublisherName>Byoo</PublisherName>
+    <SuiteName>Essentials</SuiteName>
+    <MinimumRequiredVersion>2.0.0.10</MinimumRequiredVersion>
+    <ApplicationRevision>12</ApplicationRevision>
+    <ApplicationVersion>2.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Byoo PageWriter.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Byoo PageWriter.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icons8_edit_file.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>37D8FC0BC849038575060A8E5D2483B7F4103778</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>PageWriter_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Syncfusion.Core.WinForms, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Grid.Base, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Grid.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Shared.Base, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Shared.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.SpellChecker.Base, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Tools.Base, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.Ribbon, Version=2.0.0.0, Culture=neutral, PublicKeyToken=928736e248aa81f9, processorArchitecture=MSIL">
+      <HintPath>..\packages\RibbonWinForms.5.0.1.1\lib\net461\System.Windows.Forms.Ribbon.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox1.Designer.vb">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutBox1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertDateTime.Designer.vb">
+      <DependentUpon>InsertDateTime.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InsertDateTime.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Find.Designer.vb">
+      <DependentUpon>Find.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Find.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Indent Manager.Designer.vb">
+      <DependentUpon>Indent Manager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Indent Manager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Margin Manager.Designer.vb">
+      <DependentUpon>Margin Manager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Margin Manager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AddDateTime.Designer.vb">
+      <DependentUpon>AddDateTime.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AddDateTime.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\RibbonForm.Designer.vb">
+      <DependentUpon>RibbonForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\RibbonForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="My Project\SplashScreen1.Designer.vb">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\SplashScreen1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\SplashScreen2.Designer.vb">
+      <DependentUpon>SplashScreen2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\SplashScreen2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutBox1.resx">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertDateTime.resx">
+      <DependentUpon>InsertDateTime.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Find.resx">
+      <DependentUpon>Find.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Indent Manager.resx">
+      <DependentUpon>Indent Manager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Margin Manager.resx">
+      <DependentUpon>Margin Manager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\AddDateTime.resx">
+      <DependentUpon>AddDateTime.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\RibbonForm.resx">
+      <DependentUpon>RibbonForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\SplashScreen2.resx">
+      <DependentUpon>SplashScreen2.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon.ico" />
+    <Content Include="icons8_document.ico" />
+    <Content Include="icons8_edit_file.ico" />
+    <None Include="Resources\key_32px.png" />
+    <None Include="Resources\key_16px.png" />
+    <None Include="Resources\icons8_help_32.png" />
+    <None Include="Resources\icons8_schedule_32.png" />
+    <None Include="Resources\Image File Add_32px.png" />
+    <None Include="Resources\icons8_info_16.png" />
+    <None Include="Resources\icons8_search_32.png" />
+    <None Include="Resources\bulleted_list_32px.png" />
+    <None Include="Resources\document_32px.png" />
+    <None Include="icons8_edit_file_32.png" />
+    <None Include="Resources\align_justify_32px.png" />
+    <None Include="Resources\marker_pen_32px.png" />
+    <None Include="Resources\paint_palette_32px.png" />
+    <None Include="Resources\choose_font_32px.png" />
+    <None Include="Resources\paste_32px.png" />
+    <None Include="icons8_edit_file_64.png" />
+    <None Include="Resources\save_as_16px.png" />
+    <None Include="Resources\delete_16px.png" />
+    <None Include="Resources\baseline_16px.png" />
+    <None Include="Resources\direction_16px.png" />
+    <None Include="Resources\icons8_schedule_16.png" />
+    <None Include="packages.config" />
+    <None Include="Resources\icons8_document.ico" />
+    <None Include="Resources\Line.png" />
+    <None Include="Resources\line_16px.png" />
+    <None Include="Resources\key_2_16px.png" />
+    <None Include="Resources\fill_color_16px.png" />
+    <None Include="Resources\align_right_16px.png" />
+    <None Include="Resources\align_center_16px.png" />
+    <None Include="Resources\align_left_16px.png" />
+    <None Include="Resources\icons8_document_body_16.png" />
+    <None Include="Resources\restore_window_16px.png" />
+    <None Include="PageWriter_TemporaryKey.pfx" />
+    <None Include="Resources\word_wrap_16px.png" />
+    <None Include="Resources\length_16px.png" />
+    <None Include="Resources\select_all_16px.png" />
+    <None Include="Resources\reset_16px.png" />
+    <None Include="Resources\zoom_out_16px.png" />
+    <None Include="Resources\zoom_in_16px.png" />
+    <None Include="Resources\help_127px.png" />
+    <None Include="Resources\choose_font_16px.png" />
+    <None Include="Resources\Image File Add_16px.png" />
+    <None Include="Resources\metamorphose_16px.png" />
+    <None Include="Resources\indent_16px.png" />
+    <None Include="Resources\marker_pen_16px.png" />
+    <None Include="Resources\search_16px.png" />
+    <None Include="Resources\bulleted_list_16px.png" />
+    <None Include="Resources\redo_16px.png" />
+    <None Include="Resources\undo_16px.png" />
+    <None Include="Resources\paint_palette_16px.png" />
+    <None Include="Resources\font_style_formatting_16px.png" />
+    <None Include="Resources\quote_16px.png" />
+    <None Include="Resources\code_file_16px.png" />
+    <None Include="Resources\document_16px.png" />
+    <None Include="Resources\paste_16px.png" />
+    <None Include="Resources\scissors_16px.png" />
+    <None Include="Resources\copy_16px.png" />
+    <None Include="Resources\close_window_16px.png" />
+    <None Include="Resources\microsoft_word_16px.png" />
+    <None Include="Resources\export_16px.png" />
+    <None Include="Resources\import_16px.png" />
+    <None Include="Resources\microsoft_publisher_16px.png" />
+    <None Include="Resources\pdf_16px.png" />
+    <None Include="Resources\doc_16px.png" />
+    <None Include="Resources\adobe_indesign_16px.png" />
+    <None Include="Resources\word_16px.png" />
+    <None Include="Resources\preview_pane_16px.png" />
+    <None Include="Resources\print_16px.png" />
+    <None Include="Resources\save_16px.png" />
+    <None Include="Resources\opened_folder_16px.png" />
+    <None Include="Resources\add_file_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <FileAssociation Include=".page">
+      <Visible>False</Visible>
+      <Description>Byoo PageWriter Document</Description>
+      <Progid>1</Progid>
+      <DefaultIcon>icons8_document.ico</DefaultIcon>
+    </FileAssociation>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
